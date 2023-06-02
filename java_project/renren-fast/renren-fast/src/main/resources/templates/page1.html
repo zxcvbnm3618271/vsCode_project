@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>国际化测试</h1>
+    <form action="" method="post">
+        <div>
+            <label for="username" th:text="#{page1.login.username}"></label>
+            <input type="text" id="username" name="username"
+                   th:placeholder="#{page1.login.username.placeholder}"/>
+        </div>
+        <div>
+            <label for="password" th:text="#{page1.login.password}"></label>
+            <input type="password" id="password" name="password"
+                   th:placeholder="#{page1.login.password.placeholder}"/>
+        </div>
+        <div>
+            <input type="submit" th:value="#{page1.login.submit}">
+        </div>
+    </form>
+</body>
+</html>
